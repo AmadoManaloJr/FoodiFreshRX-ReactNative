@@ -21,13 +21,11 @@ export default class RecipeScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return {
       headerTransparent: 'true',
-      headerLeft: (
-        <BackButton
-          onPress={() => {
-            navigation.goBack();
-          }}
-        />
-      )
+      headerLeft: () => <BackButton
+        onPress={() => {
+          navigation.goBack();
+        }}
+      />
     };
   };
 
@@ -122,15 +120,14 @@ export default class RecipeScreen extends React.Component {
             <Text style={styles.infoDescriptionRecipe}>{item.description}</Text>
           </View>
         </View>
+        <View style={styles.infoContainer}>
+      <Image style={styles.infoPhoto} source={require('../../../assets/icons/info.png')} />
+    <Text style={styles.infoRecipe}>Cooking Steps</Text>
+</View>
+<Text style={styles.infoDescriptionRecipe}>{item.description}</Text>
       </ScrollView>
     );
   }
 }
 
-/*cooking steps
-<View style={styles.infoContainer}>
-  <Image style={styles.infoPhoto} source={require('../../../assets/icons/info.png')} />
-  <Text style={styles.infoRecipe}>Cooking Steps</Text>
-</View>
-<Text style={styles.infoDescriptionRecipe}>{item.description}</Text>
-*/
+
