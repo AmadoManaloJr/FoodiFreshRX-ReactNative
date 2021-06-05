@@ -25,7 +25,7 @@ export const categories = [
   },
   {
     id: 0,
-    name: 'Pizza',
+    name: 'Classic Plan',
     photo_url: 'https://amp.businessinsider.com/images/5c084bf7bde70f4ea53f0436-750-563.jpg'
   },
 ];

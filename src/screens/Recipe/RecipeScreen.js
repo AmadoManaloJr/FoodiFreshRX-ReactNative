@@ -116,9 +116,6 @@ export default class RecipeScreen extends React.Component {
               }}
             />
           </View>
-          <View style={styles.infoContainer}>
-            <Text style={styles.infoDescriptionRecipe}>{item.description}</Text>
-          </View>
         </View>
         <View style={styles.infoContainer}>
       <Image style={styles.infoPhoto} source={require('../../../assets/icons/info.png')} />
